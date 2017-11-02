@@ -1,0 +1,33 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "This app scrapes Charlotte Agenda Articles and displays them using the react javascript library",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jbcurrie",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbcurrie/CLT_Agenda_Scraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jbcurrie/CLT_Agenda_Scraper/issues"
+  },
+  "homepage": "https://github.com/jbcurrie/CLT_Agenda_Scraper#readme"
+}
